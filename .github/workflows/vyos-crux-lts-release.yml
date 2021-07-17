@@ -8,10 +8,11 @@ on:
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
   BRANCH: crux
+  GIT_REF: a542f5d0e823d5409ad1a26c912a6530ee927517
   ARCHITECTURE: amd64
   BUILD_BY: vyos-build@iwarp.org
   BUILD_TYPE: release
-  VERSION: 1.2.7-epa1-4.19.194
+  VERSION: 1.2.7-epa1-4.19.195
   DEBIAN_MIRROR: http://mirrors.edge.kernel.org/debian/
 
 jobs:
@@ -23,7 +24,10 @@ jobs:
 
     steps:
       - name: Clone source code
-        run: git clone -b $BRANCH --single-branch $GIT_CLONE_URL
+        run: |
+          git clone -b $BRANCH --single-branch $GIT_CLONE_URL
+          cd ./vyos-build
+          git checkout $GIT_REF
 
       - name: Build ISO
         working-directory: ./vyos-build
