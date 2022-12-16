@@ -8,11 +8,11 @@ on:
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
   BRANCH: equuleus
-  GIT_REF: b03bec090e8c1c945d1dd5a89da86eb8edaeb760
+  GIT_REF: 1283b74e4c0d35e5a90c5f67cfc5e64d4a775e44
   ARCHITECTURE: amd64
   BUILD_BY: vyos-build@iwarp.org
   BUILD_TYPE: release
-  VERSION: 1.3.1-ga-5.4.197
+  VERSION: 1.3.2-ga-5.4.224
   DEBIAN_MIRROR: http://mirrors.edge.kernel.org/debian/
 
 jobs:
