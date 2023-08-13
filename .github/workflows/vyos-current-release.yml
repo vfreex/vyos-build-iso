@@ -8,11 +8,11 @@ on:
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
   BRANCH: current
-  GIT_REF: 8cade9112a16edc0c174997f9b14deb7291beb49
+  GIT_REF: 619e707c2c183f5df862daf0b88bb829d94dba8b
   ARCHITECTURE: amd64
   BUILD_BY: vyos-build@iwarp.org
   BUILD_TYPE: release
-  VERSION: 1.4.0-dev-6.1.10
+  VERSION: 1.4.0-dev-6.1.45-20230813
   DEBIAN_MIRROR: http://mirrors.edge.kernel.org/debian/
 
 jobs:
